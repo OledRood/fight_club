@@ -169,9 +169,6 @@ class _FightPageState extends State<FightPage> {
   }
 }
 void _saveStatistics(yourLives, enemysLives){
-  print("Hyi");
-  print(yourLives);
-  print(enemysLives);
   if (yourLives == 0 && enemysLives == 0) {
     SharedPreferences.getInstance().then((sharedPreferences) {
       sharedPreferences.setInt("stats_draw", 1);
